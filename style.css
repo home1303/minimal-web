@@ -1,0 +1,346 @@
+
+/* BASIC RESET */
+ol,h1,h3,h6,pre,form,body,p{margin:0; padding:0;}
+
+/* HTML ELEMENTS */
+
+h1 {font: bold 45px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333; }
+h1 small{ font-size: 20px; text-transform:uppercase; letter-spacing: 5px; display: block; color: #ccc; margin-top:10px; }
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+}
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+}
+
+#c1 {
+    
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  left: 100%;
+  z-index: 300;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 300;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+
+}
+
+#c3 {
+    top: 70%;
+    left: -120%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+
+  }
+
+#c4 {
+    top: 70%;
+    z-index: 200;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  
+  }
+
+#c5 {
+    top: 70%;
+    left: 120%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+
+  }
+
+#c6 {
+    top: 160%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #667fb5 30%, #070e33 100%);
+    box-shadow: 0px 20px 80px #ffde26;
+  }
+
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #e8bb5c 30%, #c3982cc0 100%);
+}
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: linear-gradient(to bottom, #a87cdf 30%, #7b88d1 100%);
+}
+
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background-image: url("img/BG3.jpg");
+  z-index: 30;
+}
+
+#s1 {
+  background: linear-gradient(to top, #81f488 0%, #7b88d1 100%);
+}
+
+#s2 {
+  background: linear-gradient(to top, #42e869 0%, #7b88d1 120%);
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+
+p {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+/*.bgimg-2{
+    opacity: 0.8;
+}*/
+
+.bgimg-1, .bgimg-2, .bgimg-3{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background: -moz-radial-gradient(#364D58,#000);
+    background: -webkit-gradient(radial, center center,10,center center,1500, from(#364D58), to(#000));
+    color:#555;
+    background-color:#151f23;
+    min-height: 400px;
+  }
+  
+  .bgimg-2 {
+    background-image: url("img/herbs-under-control-logo.png");
+    min-height: 1800px;
+  }
+  .bgimg-3 {
+    background-image: url("img/Herb_BG1.png");
+    min-height: 1000px;
+  }
+  
+  h6 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2{
+      background-attachment: scroll;
+    }
+  }
+
+  .block{
+    margin-top: 1500px;
+    margin-bottom: 0px;
+    color: #777;
+    background-image: url("img/BG.jpg");
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+
+.block1{
+  border: 1px solid #918f8f;
+  color: #777;
+  background-image: url("img/BG.jpg");
+  text-align: left;
+  padding:50px 40px;
+}
+
+
+
+
+div.gallery {
+  border: 1.5px solid #373030;
+    height: 375px;
+  background-image: url("img/BG2.jpg");
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  background-image: url("img/BG2.jpg");
+}
+
+div.gallery img {
+  width: 100%;
+  height: 185px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  height: 300px;
+  padding:  0 50px;
+  float: left;
+  width: 24.99999%;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #42e869;
+}
+
+.active {
+  background: linear-gradient(to top, #42e869 0%, #7b88d1 120%);
+}
+
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
